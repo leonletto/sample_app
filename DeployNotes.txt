@@ -1,0 +1,5 @@
+git add .
+git commit -m "Test deploy notes"
+git checkout master
+git push
+git push heroku

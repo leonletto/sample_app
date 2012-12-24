@@ -7,8 +7,11 @@ gem 'rails', '3.2.9'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
-  gem 'rspec-rails', '2.11.0'
-  gem 'win32console'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'wdm', '~> 0.0.3'
+  gem 'guard-spork'
+  gem 'spork'
 end
 
 # Gems used only for assets and not required
@@ -30,6 +33,7 @@ gem 'minitest-reporters'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'win32console', '1.3.0'
 end
 
 

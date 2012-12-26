@@ -1,4 +1,8 @@
-require 'rubygems'
+begin
+  require 'minigems'
+rescue LoadError
+  require 'rubygems'
+end
 
 # Set up gems listed in the Gemfile.
 ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
